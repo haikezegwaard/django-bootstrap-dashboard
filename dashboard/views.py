@@ -4,4 +4,4 @@ from django.template import RequestContext
 
 # Create your views here.
 def index(request):
-    return render_to_response('dashboard.html',{'foo':'bar'},context_instance=RequestContext(request))
+    return render_to_response('home.html',{'foo':'bar'},context_instance=RequestContext(request))

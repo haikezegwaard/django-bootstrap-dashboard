@@ -43,16 +43,20 @@
 </head>
 
 <body>
-<div id="page-wrapper">
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Buzzart Dashboard</h1>
+<div id="wrapper">
+    {% include "top-bar.html" %}
+    {% include "menu.html" %}
+    <div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Analyse www.projectx.nl</h1>
+        </div>
+        <!-- /.col-lg-12 -->
     </div>
-    <!-- /.col-lg-12 -->
+    {% block home %}
+    {% endblock %}
+    </div>
+<!-- /wrapper -->
 </div>
-{% block home %}
-{% endblock %}
-</div>
-
 </body>
 <html>

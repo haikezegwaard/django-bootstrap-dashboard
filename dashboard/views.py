@@ -12,6 +12,7 @@ import util
 def index(request):
     return render_to_response('home.html',{'foo':'bar'},context_instance=RequestContext(request))
 
+
 def mockDualSeries(request):
     traffic = []
     subscriptions = []
